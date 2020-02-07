@@ -1,0 +1,83 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background-color: #cca677;
+    display: grid;
+}
+
+#title{
+    grid-column: 1/2;
+}
+
+#one {
+    grid-column: 1/2;
+}
+
+#two {
+    grid-column: 1/2;
+}
+
+#three {
+    grid-column: 1/2;
+}
+
+@media screen and (min-width: 680px){
+    #wrapper{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: wheat;
+        font-size: 2vw;
+        display: grid;
+    }
+
+    #title{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    
+    #one {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #two {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    #three {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    footer {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+body{
+    font-size: 18px; /* 1em or 1rem */
+}
+
+footer {
+    align-content: center;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
