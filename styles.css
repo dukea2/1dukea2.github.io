@@ -1,0 +1,31 @@
+html{
+    box-sizing: border-box;
+}
+
+*::before, *::after{
+    box-sizing: border-box;
+}
+
+#wrapper{
+    background-color: #cca677;
+    height: 100px;
+}
+
+#title{
+    text-align: left;
+    margin-left: 50px;
+}
+
+body{
+    font-size: 18px; /* 1em or 1rem */
+}
+
+img{
+    float: right;
+    margin-right: 40px;
+}
+
+footer {
+    align-content: center;
+    text-align: center;
+}

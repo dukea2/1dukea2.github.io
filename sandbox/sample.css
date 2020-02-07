@@ -1,0 +1,66 @@
+/* Build an Index
+1. Imports
+2. General rules
+2.1 Change the box model
+2.2 Body rules
+2.3 Structure rules
+3. Mobile rules
+3.1 Navigation bar
+3.2 Section layout rules
+4. Large screen rules (media query)
+4.1 Navigation bar
+4.2 Section layout */
+
+/* 2.1 Change box model  */
+html {
+ box-sizing: border-box;
+}
+
+*, *::before, *::after{
+ box-sizing: inherit;
+}
+
+/* General Styles */
+body {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 18px; 
+}
+
+#wrapper {
+ padding: 2vw;
+}
+
+/* Mobile First Styles */
+#pageHeader {
+ font-size: 30px;
+}
+
+#pageNav {
+ background-color: white;
+ width: 100%;
+}
+
+#pageFooter {
+ margin-bottom: 3rem;
+}
+
+ul {
+ display: flex;
+ padding: 0;
+ list-style: none;
+ justify-content: space-around;
+ position: fixed;
+ bottom: 0;
+ background-color: white;
+}
+
+ul li {
+ border: #0000ff solid 2px; /* Shortcut for color, style, thickness */
+}
+
+/* Larger Screen Styles  */
+@media screen and (min-width: 40em) {
+ main {
+  display: flex;
+ }
+}
