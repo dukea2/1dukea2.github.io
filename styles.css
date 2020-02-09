@@ -11,9 +11,9 @@ html{
 
 #wrapper{
     background-color: #cca677;
-    height: 100px;
-    display: grid;
-    vertical-align: middle;
+    height: 150px;
+    display: flex;
+    align-items: center;
 }
 
 #title{
@@ -32,8 +32,9 @@ img{
 
 footer {
     clear: both;
+    display: grid;
     background-color: #cca677;
-    align-content: center;
+    height: 100px;
     text-align: center;
 }
 
