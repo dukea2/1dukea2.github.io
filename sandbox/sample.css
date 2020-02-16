@@ -58,9 +58,30 @@ ul li {
  border: #0000ff solid 2px; /* Shortcut for color, style, thickness */
 }
 
-/* Larger Screen Styles  */
+/* Larger Screen Styles  
 @media screen and (min-width: 40em) {
  main {
   display: flex;
  }
 }
+*/
+
+body {
+ background-color: #5f9ea0;
+ background-image: url("coolpic.jpg");
+ background-repeat: no-repeat;
+ background-attachment: scroll;
+ background-position: center top;
+ background-size: cover;
+}
+
+/*body {
+ background-color: white;
+ background-image: linear-gradient(red,blue);
+ /*background-repeat: no-repeat;*
+}*/
+
+/*body {
+ background-color: white;
+ background-image: repeating-linear-gradient(green,yellow 20%);
+}*/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Ashley Duke">
+    <meta name="description" content="Progressive loading images assignment for Ashley Duke in CIT 230: Web Fronted Development at BYU-Idaho, 2020 Winter.">
+    <title>Progressive Loading Images</title>
+    <link rel="stylesheet" href="wi.css">
+</head>
+<body>
+<header>
+    <h1 id="title">Progressive Loading Images</h1>
+</header>
+<main>
+<picture>
+    <source srcset="/weather/clear-p.jpg" media="(min-width: 500px) and (max-width: 799px)">
+    <source srcset="/weather/clear.jpg" media="(min-width: 800px)">
+    <img src="/weather/placeholder.jpg" data-src="/weather/clear.jpg" alt="Clear Weather">
+</picture>
+<picture>
+    <source srcset="/weather/clouds-p.jpg" media="(min-width: 500px) and (max-width: 799px)">
+    <source srcset="/weather/clouds.jpg" media="(min-width: 800px)">
+    <img src="/weather/placeholder.jpg" data-src="/weather/clouds.jpg" alt="Cloudy Weather">
+</picture>
+<picture>
+    <source srcset="/weather/fog-p.jpg" media="(min-width: 500px) and (max-width: 799px)">
+    <source srcset="/weather/fog.jpg" media="(min-width: 800px)">
+    <img src="/weather/placeholder.jpg" data-src="/weather/fog.jpg" alt="Foggy Weather">
+</picture>
+<picture>
+    <source srcset="/weather/rain-p.jpg" media="(min-width: 500px) and (max-width: 799px)">
+    <source srcset="/weather/rain.jpg" media="(min-width: 800px)">
+    <img src="/weather/placeholder.jpg" data-src="/weather/rain.jpg" alt="Rainy Weather">
+</picture>
+<picture>
+    <source srcset="/weather/snow-p.jpg" media="(min-width: 500px) and (max-width: 799px)">
+    <source srcset="/weather/snow.jpg" media="(min-width: 800px)">
+    <img src="/weather/placeholder.jpg" data-src="/weather/snow.jpg" alt="Snowy Weather">
+</picture>
+</main>
+<script src="wi.js"></script>
+</body>
+</html>
